@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en;ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>7h3 5h0p</title>
+    <link rel="shortcut icon" href="img/oggetto_logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="scripts/app.js" defer></script>
+</head>
+<body>
+<div class="wrapper">
+    <header class="header">
+        <div class="container">
+            <div class="header__row">
+                <div class="header__title">
+                    <a href="#">7h3 5h0p</a>
+                </div>
+                <div class="header__logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 147.3 147.3"><title>ogg_logo_new</title>
+                        <path d="M73.6,0a73.6,73.6,0,1,0,73.6,73.6A73.6,73.6,0,0,0,73.6,0ZM98,116.8c-19.4,14.8-46.7,10.1-61.9-10.5-12-16.2-13-37-2.6-54.6,15.3-26,49.1-36.9,76.8-24.9l2.5,1.3-23-.8V28l6.1,1v1.1c-2.2.3-4.5,1-6.7.8C69.6,29.2,44.4,44.6,38,65.1c-7,22.4,7.5,46.8,30.3,50.3,16,2.4,32.2-9.2,34-25.1,1-9-3.2-16-10.5-21s-12.9-4.2-19.4-.5S63.9,77.3,65,84a11.9,11.9,0,0,0,.8-2c1.3-6.8,5-10.9,10.9-11.9a15,15,0,0,1,16,7.3c6,10.1-.4,23.3-12.7,25.7-9.2,1.8-16.4-1.8-21.8-9.1s-5.3-17.4-.8-24.6c11.7-18.8,38-18.2,50.4,1.2C117.4,85.6,113.2,105.2,98,116.8Z"
+                              style="fill:#cc0000"/>
+                        <path d="M78.8,96.1A12.6,12.6,0,0,0,78.5,71c-7.9.3-12.2,6.1-12.6,12.6S72,96.2,78.8,96.1Zm.4-17.6a5.1,5.1,0,0,1,4.9,5.4,5,5,0,1,1-4.9-5.4Z"
+                              style="fill:#cc0000;"/>
+                    </svg>
+                </div>
+                <div class="header__phone">
+                    <a href="#">+7 (812) 2•12•85•06</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav class="navigation">
+        <div class="container">
+            <div class="navigation__row">
+                <div class="navigation__menu menu">
+                    <ul class="menu__list">
+                        <li class="menu__item menu__item_active"><a href="#">LISP</a></li>
+                        <li class="menu__item "><a href="#">OCaml</a></li>
+                        <li class="menu__item "><a href="#">JavaScript</a></li>
+                        <li class="menu__item "><a href="#">Python</a></li>
+                        <li class="menu__item "><a href="#">PHP</a></li>
+                    </ul>
+                </div>
+                <div class="navigation__search search">
+                    <input class="search__input" type="text">
+                    <button class="search__btn">
+                        <img src="img/icons/search_icon.png" alt="">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main class="main">
+        <div class="container">
+            <div class="path">
+                <ul class="path__list">
+                    <li class="path__item"><a href="#">LISP</a></li>
+                    <li class="path__item"><a href="#">Одежда</a></li>
+                    <li class="path__item path__item_active"><a href="#">Футболки</a></li>
+                </ul>
+            </div>
+            <section class="product">
+                <div class="product__row">
+                    <div class="product__image">
+                        <img id="tshirt-image" src="img/tshirts/tshirt_white.jpg" alt="">
+                    </div>
+                    <div class="product__order">
+                        <div class="product__title">
+                            Футболка Alien technology
+                        </div>
+                        <div class="product__description">
+                            Состав: 100% хлопок, динамическая типизация, польская нотация. Производство: Россия.
+                        </div>
+                        <div class="product__order_image">
+                            <img src="img/tshirts/tshirt_white.jpg" alt="">
+                        </div>
+                        <div class="product__price">1500₽</div>
+                        <div class="product__size choice">
+                            <p class="choice__title">Размер:</p>
+                            <div class="choice__items">
+                                <ul class="choice__list">
+                                    <li><button class="choice__item" id="small-btn">S</button></li>
+                                    <li><button class="choice__item" id="medium-btn">M</button></li>
+                                    <li><button class="choice__item" id="large-btn">L</button></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="product__color choice">
+                            <p class="choice__title">Цвет:</p>
+                            <div class="choice__items">
+                                <ul class="choice__list color-list">
+                                    <li>
+                                        <button class="choice__item color-list__white" id="white-btn"></button>
+                                    </li>
+                                    <li>
+                                        <button class="choice__item color-list__yellow" id="yellow-btn"></button>
+                                    </li>
+                                    <li>
+                                        <button class="choice__item color-list__green" id="green-btn"></button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="product__buy">
+                            <button>Купить</button>
+                        </div>
+                        <div class="product__favorite favorite">
+                            <button>
+                                <div class="favorite__img">
+                                    <img src="img/icons/heart_icon_67.png" alt="">
+                                </div>
+                                <div class="favorite__text">Отложить на потом</div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__body">
+                <div class="footer__row">
+                    <div class="footer__support info-block">
+                        <h2 class="info-block__title">Сервис и поддержка</h2>
+                        <div class="info-block__row support-row">
+                            <ul class="info-block__list">
+                                <li class="info-block__item"><a href="#">Как сделать заказ</a></li>
+                                <li class="info-block__item"><a href="#">Возврат товара</a></li>
+                                <li class="info-block__item"><a href="#">Публичная оферта</a></li>
+                                <li class="info-block__item"><a href="#">Доставка</a></li>
+                            </ul>
+                            <ul class="info-block__list">
+                                <li class="info-block__item"><a href="#">Способы оплаты</a></li>
+                                <li class="info-block__item"><a href="#">Правила продажи</a></li>
+                                <li class="info-block__item"><a href="#">Возврат денежных средств</a></li>
+                                <li class="info-block__item"><a href="#">Вопросы и ответы</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer__about info-block">
+                        <h2 class="info-block__title">О компании</h2>
+                        <div class="info-block__row about__row">
+                            <ul class="info-block__list">
+                                <li class="info-block__item"><a href="#">О нас</a></li>
+                                <li class="info-block__item"><a href="#">Контакты</a></li>
+                                <li class="info-block__item"><a href="#">Вакансии</a></li>
+                                <li class="info-block__item"><a href="#">Партнеры</a></li>
+                            </ul>
+                            <ul class="info-block__list">
+                                <li class="info-block__item"><a href="#">Сертификаты</a></li>
+                                <li class="info-block__item"><a href="#">Преимущества</a></li>
+                                <li class="info-block__item"><a href="#">Наши скидки</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer__advantages advantages">
+                        <ul class="advantages__list">
+                            <li class="advantages__item">
+                                <div class="advantages__row">
+                                    <img src="img/icons/delivery.svg" alt="">
+                                    <p>бесплатная доставка от 4000 ₽</p>
+                                </div>
+                            </li>
+                            <li class="advantages__item">
+                                <div class="advantages__row">
+                                    <img src="img/icons/heart.svg" alt="">
+                                    <p>пробники в подарок при каждой покупке</p>
+                                </div>
+                            </li>
+                            <li class="advantages__item">
+                                <div class="advantages__row">
+                                    <img src="img/icons/cup.svg" alt="">
+                                    <p class="advantages__text">акции и подарки за покупку</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__share share">
+                        <ul class="share__list">
+                            <li class="share__image">
+                                <img src="img/icons/facebook.svg" alt="">
+                            </li>
+                            <li class="share__image">
+                                <img src="img/icons/twitter.svg" alt="">
+                            </li>
+                            <li class="share__image">
+                                <img src="img/icons/instagram.svg" alt="">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <p>2005-2017 © 7h35h0p.ru — модный интернет-магазин одежды, обуви и аксессуаров.</p>
+                <p>Все права защищены. Доставка по всей России!</p>
+            </div>
+        </div>
+    </footer>
+    <button class="choice__item" id="button_def">Hello buutooto</button>
+</div>
+</body>
+</html>
